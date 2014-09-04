@@ -1,0 +1,146 @@
+/* line 1, ../scss/main_temp.scss */
+body {
+  font-size: 16px;
+}
+
+/* line 6, ../scss/main_temp.scss */
+body {
+  background: url("../images/sun_bg.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #000;
+}
+
+/* line 15, ../scss/main_temp.scss */
+h1, h2, h3, h4, p {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, ../scss/main_temp.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/*html { 
+  background: url(images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+/* line 40, ../scss/main_temp.scss */
+.row_header {
+  margin-top: 20px;
+}
+
+/* line 44, ../scss/main_temp.scss */
+.row_header h1 {
+  color: white;
+  margin-left: -20px;
+  margin-top: 25px;
+}
+
+/* line 52, ../scss/main_temp.scss */
+.row_today {
+  margin-top: 60px;
+}
+
+/* line 57, ../scss/main_temp.scss */
+.row_today_rating {
+  margin-top: 5px;
+}
+
+/* line 62, ../scss/main_temp.scss */
+.row_today_rating h2 {
+  font-size: 2em;
+  color: #ffff01;
+  text-shadow: 2px 2px 2px #969696;
+}
+
+/* line 70, ../scss/main_temp.scss */
+.row_exposure {
+  margin-top: 30px;
+}
+
+/* line 75, ../scss/main_temp.scss */
+.row_exposure_time {
+  margin-top: 10px;
+}
+
+/* line 79, ../scss/main_temp.scss */
+.exp_pic {
+  float: left;
+  width: 28%;
+  margin-left: -15px;
+  margin-right: 5%;
+  margin-top: 5px;
+}
+
+/* line 88, ../scss/main_temp.scss */
+.exp_time {
+  float: left;
+  width: 30%;
+  margin-right: 10%;
+}
+
+/* line 95, ../scss/main_temp.scss */
+.exp_mess {
+  float: left;
+  width: 30%;
+  margin-top: 5px;
+}
+
+/* line 103, ../scss/main_temp.scss */
+.row_exposure_time h4 {
+  font-size: 50px;
+  color: white;
+}
+
+/* line 109, ../scss/main_temp.scss */
+.row_exposure_time h3 {
+  font-size: 20px;
+  color: white;
+}
+
+/* line 115, ../scss/main_temp.scss */
+.row_nextday {
+  margin-top: 20px;
+}
+
+/* line 120, ../scss/main_temp.scss */
+.row_nextday_rating {
+  margin-top: 5px;
+}
+
+/* line 125, ../scss/main_temp.scss */
+.row_nextday_rating h2 {
+  font-size: 36px;
+  color: #ff6600;
+  text-shadow: 2px 2px 2px #969696;
+}
+
+/* line 132, ../scss/main_temp.scss */
+.row_feature_icons {
+  margin-top: 100px;
+}
+
+/* line 137, ../scss/main_temp.scss */
+#sun {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+
+/* line 147, ../scss/main_temp.scss */
+#sun {
+  background-color: #FB7209;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
+}

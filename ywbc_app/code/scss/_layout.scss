@@ -1,0 +1,154 @@
+html { 
+
+	-webkit-text-size-adjust: 100%;
+ }
+
+
+body {
+
+	font-size:16px;
+}
+
+body {
+	background: url("../images/sun_med_tl.png") no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color: #000;
+}
+
+
+h1, h2, h3, h4, p {
+
+	font-family: 'Muli', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+h3 {
+
+	font-size: 1.5em;
+}
+
+.row_header{
+	margin-top:20px;
+}
+
+#yoo {
+
+	color:#02CD02;
+
+}
+
+#vee {
+
+	color:#CC019B;
+}
+
+.row_today {
+
+	margin-top:20px;
+}
+
+#today,
+#outlook {
+
+	font-size:30px;
+	text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+	letter-spacing:1px;
+}
+
+
+.row_exposure {
+
+	margin-top:15px;
+}
+
+.exp_pic img, 
+.exp_mess h3 {
+
+	margin-top:10px;
+}
+
+.exp_pic {
+
+	float:left;
+	width:30%;
+	margin-left:-15px;
+	margin-right:6px;
+}
+
+.exp_time {
+	float:left;
+	width:30%;
+	margin-right:14px;
+}
+
+.exp_mess {
+	float:left;
+	width:30%;
+}
+
+#expTime {
+	
+	font-size:45px;
+	color:white;
+}
+
+.row_exposure_time h3 {
+
+	font-size:20px;
+	color:white;
+}
+
+.row_nextday {
+
+	margin-top:15px;
+}
+
+.row_nextday h3 {
+
+	font-size:22px;
+}
+
+.row_nextday_rating {
+
+	margin-top: 5px;
+}
+
+.row_nextday_rating h2 {
+	font-size:36px;
+	color:#ff6600;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.row_location {
+
+	margin-top: 30px;
+}
+
+.row_location a {
+
+	color:white;
+}
+
+.row_feature_icons {
+
+	margin-top:100px;
+	margin-bottom:25px;
+}
+
+#error {
+
+	padding-top:8px;
+	background-color:white;
+	opacity:.2;
+	width:60%;
+	height:60px;
+	margin-left:20%;
+	text-align:center;
+	//margin-top:-200px;
+	border-radius:10px;
+	color:black;
+}

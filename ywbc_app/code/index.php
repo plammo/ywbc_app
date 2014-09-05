@@ -4,9 +4,7 @@
 
 <?php
 require_once('includes/head.php');
-require_once('includes/content.php');
-//require_once('includes/sun.php');
-//require_once('includes/footer.php');
+require_once('includes/content_new.php');
 ?>
 
 

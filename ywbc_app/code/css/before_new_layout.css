@@ -325,106 +325,83 @@ h3 {
 /* line 74, ../scss/_layout.scss */
 .exp_pic {
   float: left;
-  width: 26%;
+  width: 30%;
   margin-left: -15px;
+  margin-right: 6px;
 }
 
 /* line 82, ../scss/_layout.scss */
 .exp_time {
   float: left;
   width: 30%;
-  margin-left: 10px;
+  margin-right: 14px;
 }
 
 /* line 88, ../scss/_layout.scss */
 .exp_mess {
   float: left;
   width: 30%;
-  margin-right: 15px;
 }
 
-/* line 94, ../scss/_layout.scss */
+/* line 93, ../scss/_layout.scss */
 #expTime {
   font-size: 45px;
   color: white;
 }
 
-/* line 100, ../scss/_layout.scss */
+/* line 99, ../scss/_layout.scss */
 .row_exposure_time h3 {
   font-size: 20px;
   color: white;
 }
 
-/* line 106, ../scss/_layout.scss */
+/* line 105, ../scss/_layout.scss */
 .row_nextday {
   margin-top: 15px;
 }
 
-/* line 111, ../scss/_layout.scss */
+/* line 110, ../scss/_layout.scss */
 .row_nextday h3 {
   font-size: 22px;
 }
 
-/* line 116, ../scss/_layout.scss */
+/* line 115, ../scss/_layout.scss */
 .row_nextday_rating {
   margin-top: 5px;
-  margin-bottom: 30px;
 }
 
-/* line 122, ../scss/_layout.scss */
-#outlook h2 {
-  font-size: 10px;
+/* line 120, ../scss/_layout.scss */
+.row_nextday_rating h2 {
+  font-size: 36px;
   color: #ff6600;
   text-shadow: 2px 2px 2px #969696;
 }
 
-/* line 128, ../scss/_layout.scss */
+/* line 126, ../scss/_layout.scss */
 .row_location {
   margin-top: 30px;
 }
 
-/* line 133, ../scss/_layout.scss */
+/* line 131, ../scss/_layout.scss */
 .row_location a {
   color: white;
 }
 
-/* line 138, ../scss/_layout.scss */
-.search_button {
-  color: white;
-}
-
-/* line 142, ../scss/_layout.scss */
+/* line 136, ../scss/_layout.scss */
 .row_feature_icons {
   margin-top: 100px;
   margin-bottom: 25px;
 }
 
-/* line 150, ../scss/_layout.scss */
-.err_mess,
-.err_mess_search,
-.row_locate_mess {
-  display: none;
-  padding-top: 12px;
+/* line 142, ../scss/_layout.scss */
+#error {
+  padding-top: 8px;
   background-color: white;
-  opacity: .6;
+  opacity: .2;
   width: 60%;
-  height: 110px;
+  height: 60px;
   margin-left: 20%;
   text-align: center;
-  margin-top: 75px;
   border-radius: 10px;
   color: black;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
-}
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
 }

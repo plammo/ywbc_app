@@ -1,39 +1,50 @@
 $(document).ready(function(){
 
-	function GetLocation() {
-	    var geocoder = new google.maps.Geocoder();
-	    var address = document.getElementById("cityLocale").value;
-	    geocoder.geocode({ 'address': address }, function (results, status) {
-	        if (status == google.maps.GeocoderStatus.OK) {
-	            var latitude = results[0].geometry.location.lat();
-	            var longitude = results[0].geometry.location.lng();
-	            
-	            getUv(latitude, longitude);
-	            //alert("Latitude: " + latitude + "\nLongitude: " + longitude);
-	        } else {
-	            
-	            var source = $('#error-template').html();
-	            var template = Handlebars.compile(source);
+	//my load flow is
+	//check if device supports geolocation services
+	//if yes run getLocationAuto function
+	//pass lat lon co-ordinates to getUv function
+	//return results to screen
+	//location search button is also loaded
+	//if no load search box and run getLocationSearch function
+	//return results to screen
 
-	            $('body').append(template(status));
+	if (navigator.geolocation) {
+	
+		getLocationAuto();
+	
+	}else{
+	
+		$( ".err_mess" ).show();
+		
+	}
 
-	            //alert("Request failed.")
-	        }
-	    });
-    };
+	function getLocationAuto(){
 
-    $('.search_button').on('click', function(event){
+		//co-ordinates from auto detect
+		//pass as latitude and longitude to getUv function
 
-    		event.preventDefault();
+		navigator.geolocation.getCurrentPosition(function(position){
 
-    		GetLocation(); 
-    		
+				//this is the success state when we get the current position back
+				console.log(position);
 
-    });
+				var latitude = position.coords.latitude;
+				var	longitude = position.coords.longitude;
+				
+			
+			}, function(error) {
 
+				//this is what happens when we cant get the current position
 
-    
+				//show/hide error div
+				$( ".err_mess" ).show();
+				
 
+				});
+		
+		
+	}
 
 	function getUv(latitude, longitude){
 
@@ -94,16 +105,15 @@ $(document).ready(function(){
     				$('#expTime').html(expString);
 				}
 
-
+					//get weather outlook finromationand display
 					$('#outlook').html(weather).css({color:"#02CD02"});
 
-				//console.log(uvString);
-								
-				// put the derived string value into the div
-				/*$('#today').html(uvString).css({color:"#ffff01", "font-size": "36px", 
-					"text-shadow": "2px 2px 2px rgba(150, 150, 150, 1)"});*/
-							
+					//on success hide the error messages
+					$( ".err_mess" ).hide();
+					$(".err_mess_search").hide();
 
+				//console.log(uvString);
+				
 			},
 			error: function(){
 				console.log('no');
@@ -113,10 +123,34 @@ $(document).ready(function(){
 		});
 	}
 
+		function getLocationSearch() {
+	    var geocoder = new google.maps.Geocoder();
+	    var address = document.getElementById("cityLocale").value;
+	    geocoder.geocode({ 'address': address }, function (results, status) {
+	        if (status == google.maps.GeocoderStatus.OK) {
+	            var latitude = results[0].geometry.location.lat();
+	            var longitude = results[0].geometry.location.lng();
+	            
+	            getUv(latitude, longitude);
+	            //alert("Latitude: " + latitude + "\nLongitude: " + longitude);
+	        } else {
+	           
+	        	//hide previous error message and display correct one
+	           $(".err_mess").hide(); 
+	           $( ".err_mess_search" ).show();
 
-	
-	
+	        }
+	    });
+    };
 
+    $('.search_button').on('click', function(event){
+
+    		event.preventDefault();
+
+    		getLocationSearch(); 
+    
+    });
+	
 });	
 
 
